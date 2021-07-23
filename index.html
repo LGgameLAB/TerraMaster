@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Street View split-map-panes</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <div id="map"></div>
+    <div id="pano"></div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHTaSJWFRmqqQkL_fXwmGMud5esNhG-hU&callback=initialize&libraries=&v=weekly"
+      async
+    ></script>
+    <button onclick="checkGuess()">
+        Check My answer
+    </button>
+    <h3 id="dist">
+        Distance: 
+    </h3>
+  </body>
+</html>

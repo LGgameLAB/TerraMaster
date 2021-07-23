@@ -1,0 +1,26 @@
+html,
+body {
+  height: 90%;
+  margin: 0;
+  padding: 0;
+}
+
+#map,
+#pano {
+  float: left;
+  height: 100%;
+  width: 50%;
+}
+
+button{
+    color: black;
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 15px 32px;
+    background-color: cadetblue;
+    border:none;
+    transition-duration: 0.4s;
+}
+button:hover{
+    background-color: rgb(205, 253, 255);
+}
