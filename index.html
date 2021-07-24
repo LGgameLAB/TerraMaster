@@ -4,10 +4,16 @@
     <title>Street View split-map-panes</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <link rel="stylesheet" type="text/css" href="./style.css" />
-    <script src="./index.js"></script>
+    <script src="./locations.js"></script>
+    <script src="./app.js"></script>
   </head>
   <body>
     <div id="map"></div>
+    <div id="floating-panel">
+        <h3>
+            Game 1 of 5
+        </h3>
+    </div>
     <div id="pano"></div>
 
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
@@ -18,8 +24,11 @@
     <button onclick="checkGuess()">
         Check My answer
     </button>
+    <button id= "reset" onclick="reset()">
+        Reset
+    </button>
     <h3 id="dist">
-        Distance: 
+        Distance: click on the map
     </h3>
   </body>
 </html>
